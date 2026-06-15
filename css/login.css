@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+:root {
+
+    --bg-primary: #F5E6D3;
+    --bg-secondary: #E6D0B8;
+
+    --primary: #8B5E3C;
+    --primary-hover: #6F4A2D;
+
+    --text-primary: #2C1810;
+    --text-secondary: #6B4F3A;
+
+    --shadow:
+        0px 8px 24px #6B4F3A;
+
+    --transition: 0.3s ease;
+}
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-card {
+    width: min(100%, 420px);
+    background-color: var(--bg-secondary);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-card h1 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    margin: 2rem;
+}
+
+.input-group input {
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    outline: none;
+    width: 100%;
+    margin: 10px;
+
+}
+
+.input-group input:focus {
+
+    border-color: var(--primary);
+
+    box-shadow:
+        0px 0px 8px #6F4A2D;
+}
+
+button {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: var(--primary);
+
+    color: white;
+
+    cursor: pointer;
+
+    margin-top: 1rem;
+
+    transition: var(--transition);
+}
+
+button:hover {
+
+    background-color: var(--primary-hover);
+
+    transform: translateY(-2px);
+}
+
+.signup-link {
+
+    text-align: center;
+
+    margin-top: 1.5rem;
+}
+
+.signup-link a {
+
+    color: var(--primary);
+
+    text-decoration: none;
+}
+
+#forget {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+#forget:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+}
